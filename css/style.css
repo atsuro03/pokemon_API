@@ -1,0 +1,77 @@
+#wrappaer {
+  background-color: #ff0000;
+}
+
+#header {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 40px;
+}
+
+#pokedex {
+   display:-webkit-box;
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-flex-wrap:wrap;
+   -ms-flex-wrap:wrap;
+   flex-wrap:wrap;
+   -webkit-box-pack:justify;
+   -webkit-justify-content:space-between;
+   -ms-flex-pack:justify;
+   justify-content:space-between;
+   width:100%;
+   margin:0 auto;
+   background-color: #ff0000;
+   list-style: none;
+}
+
+.pokebox {
+  width:200px;
+  height:150px;
+  margin:50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.text {
+  padding:200px 0 ;
+}
+
+.text p {
+  text-align:center;
+  font-size:30px;
+}
+
+
+.fadein {
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+.popup {
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 1;
+  width:100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  opacity: 0.95;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image {
+  width:200px;
+
+}
