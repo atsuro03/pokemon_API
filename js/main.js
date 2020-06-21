@@ -1,7 +1,7 @@
 const pokedex = document.getElementById("pokedex")
 
 const fetchPokemon = async () => {
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=150`;
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=493`;
   const res = await fetch(url);
   const data = await res.json();
   const pokemon = data.results.map((result, index) => ({
@@ -57,16 +57,3 @@ const closePopup = () => {
 };
 
 fetchPokemon();
-
-$(function(){
-	$(window).scroll(function (){
-		$('.fadein').each(function(){
-			var elemPos = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var windowHeight = $(window).height();
-			if (scroll > elemPos - windowHeight + 150){
-				$(this).addClass('scrollin');
-			}
-		});
-	});
-});

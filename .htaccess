@@ -1,0 +1,8 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+AuthUserFile /home/red-test/www/pokemon_API/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
